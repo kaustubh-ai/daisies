@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns='http://www.w3.org/2000/svg'>
+    <defs>
+        <symbol viewBox='0 0 16 16' id='search' fill='none'>
+            <g clip-path='url(#a)' opacity='.3'>
+                <path stroke='#E0E0E0' stroke-linecap='round'
+                      d='m13 11.138 1.281 1.281a1.316 1.316 0 1 1-1.862 1.862L11.14 13M1.332 7a5.667 5.667 0 1 1 11.334 0A5.667 5.667 0 0 1 1.333 7Z'/>
+            </g>
+            <defs>
+                <clipPath id='a'>
+                    <path fill='#fff' d='M0 0h16v16H0z'/>
+                </clipPath>
+            </defs>
+        </symbol>
+
+        <symbol viewBox='0 0 11 8' fill='none' id='tick'>
+            <path d='M10 1L3.8125 7L1 4.27273' stroke='#1B1B1B' stroke-width='1.5' stroke-linecap='round'
+                  stroke-linejoin='round'/>
+        </symbol>
+    </defs>
+</svg>
