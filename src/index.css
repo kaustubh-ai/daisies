@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	
+	.google {
+		--tglbg: var(--fallback-b1,oklch(var(--b1)/1));
+		--handleoffset: 1.5rem/* 24px */;
+		--handleoffsetcalculator: calc(var(--handleoffset) * -1);
+		--togglehandleborder: 0 0;
+		height: 1.5rem/* 24px */;
+		width: 3rem/* 48px */;
+		cursor: pointer;
+		appearance: none;
+		border-radius: var(--rounded-badge, 1.9rem/* 30.4px */);
+		border-width: 1px;
+		border-color: currentColor;
+		background-color: currentColor;
+		color: var(--fallback-bc,oklch(var(--bc)/0.5));
+		transition: background, box-shadow 0.2s ;
+		box-shadow: var(--handleoffsetcalculator) 0 0 2px var(--tglbg) inset,
+		0 0 0 2px var(--tglbg) inset,
+		var(--togglehandleborder);
+	}
+	
+	.google:checked,
+	.google[checked="true"],
+	.google[aria-checked="true"] {
+		background-image: none;
+		--handleoffsetcalculator: var(--handleoffset);
+		color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
+	}
+}
