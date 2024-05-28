@@ -2,9 +2,8 @@
 // noinspection EqualityComparisonWithCoercionJS
 
 import {Body, Column, Container, Head, Heading, Html, Img, Row, Section, Tailwind, Text} from '@react-email/components'
-import {Font} from './Font.jsx'
 
-export const Email = () => {
+export const GenerateEmail = () => {
 	return (
 		<Html>
 			<Tailwind>
@@ -49,7 +48,7 @@ export const Email = () => {
 								<Row>
 									<Column>
 										<Text className='text-center text-[10px] sm:text-sm text-white m-0'>
-											This message was produced and distributed by Stockemy.
+											In case of any queries, please reach out to us at <a className='font-semibold underline underline-offset-2' href='mailto:support@stockemy.in'>support@stockemy.in</a>
 										</Text>
 									</Column>
 								</Row>
